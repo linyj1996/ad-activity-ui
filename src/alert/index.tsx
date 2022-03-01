@@ -1,9 +1,13 @@
 import React from 'react';
 import t from 'prop-types';
 
-import type { AlertProps, KindMap } from './interface';
+export interface AlertProps {
+  kind?: 'info' | 'positive' | 'negative' | 'warning';
+}
 
-const prefixCls = 'happy-alert';
+export type KindMap = Record<Required<AlertProps>['kind'], string>;
+
+const prefixCls = 'ad-activity-alert';
 
 const kinds: KindMap = {
   info: '#5352ED',

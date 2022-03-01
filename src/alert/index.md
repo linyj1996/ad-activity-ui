@@ -1,10 +1,12 @@
 ---
-name: Alert 警告提示
-route: /Alert
-menu: 组件
+title: Alert 警告提示
+nav:
+  title: 组件
+  order: 2
+group:
+  title: 反馈
+  order: 1ru
 ---
-
-import { Playground } from 'docz'; import Alert from './alert'; // 引入组件 import './style'; // 引入组件样式
 
 # Alert 警告提示
 
@@ -14,12 +16,10 @@ import { Playground } from 'docz'; import Alert from './alert'; // 引入组件 
 
 ### 基本用法
 
-<Playground>
-  <Alert kind="warning">这是一条警告提示</Alert>
-</Playground>
-
 ## API
 
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |
 | kind | 警告类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
+
+<code src="./demo/basic.tsx"></code>
