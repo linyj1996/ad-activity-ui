@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "dev": "dumi dev",
     "build:site": "rimraf doc-site && dumi build",
+    "build:types": "tsc -p tsconfig.build.json",
     "preview:site": "npm run build:site && serve doc-site"
   },
   "keywords": [],
@@ -15,6 +17,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@umijs/fabric": "^2.10.2",
+    "cpr": "^3.0.1",
     "dumi": "^1.1.38",
     "less": "^4.1.2",
     "prettier": "^2.5.1",
