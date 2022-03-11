@@ -1,11 +1,13 @@
 ---
 title: Alert 警告提示
 nav:
+  path: /components
   title: 组件
   order: 2
 group:
-  title: 反馈
-  order: 1ru
+  # path: /Alert
+  title: Alert 按钮
+  order: 1
 ---
 
 # Alert 警告提示
